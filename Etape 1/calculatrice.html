@@ -11,11 +11,11 @@
 
     <table class="calculatrice" >
         <tr>
-            <td rawspan="2" colspan="5" id="resultat"><p ></p>  </td>
+            <td rawspan="2" colspan="5" id="resultat"><p id="res"></p>  </td>
         </tr>
         <tr>
             <td colspan="4"><input id="ecran" type="text"/></td>
-            <td> <input type="button" value="C" onclick="Boutonclear()"/> </td>
+            <td> <input type="button" value="AC" onclick="ALLclear()"/> </td>
         </tr>
         <tr>
             <td> <input type="button" value="7" onclick="Affiche('7')" /> </td>
@@ -40,14 +40,16 @@
             <td> <input type="button" value="2" onclick="Affiche('2')" /> </td>
             <td> <input type="button" value="3" onclick="Affiche('3')" /> </td>
             <td> <input type="button" value="-" onclick="Affiche('-')" /> </td>
+            <td> <input type="button" value="+" onclick="Affiche('+')" /> </td>
         </tr>
 
 
         <tr>
             <td> <input type="button" value="." onclick="Affiche('.')" /> </td>
             <td> <input type="button" value="0" onclick="Affiche('0')" /> </td>
-            <td > <input type="button" value="=" onclick="calcul()" id="egal" /> </td>
-            <td> <input type="button" value="+" onclick="Affiche('+')" /> </td>
+            <td> <input type="button" value="C" onclick="Boutonclear()"/> </td>
+            <td colspan="2"> <input type="button" value="=" onclick="calcul()" id="egal" /> </td>
+            
             
         </tr>
     </table>

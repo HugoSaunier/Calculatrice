@@ -9,7 +9,12 @@ function Boutonclear(){
     ecran.value= valeurActuel.slice(0,-1);
 }
 function calcul(){
-    var res = eval(ecran.value)
-    ecran.value=""
-    console.log(res)
+    var res = eval(ecran.value);
+    document.getElementById("res").innerHTML=ecran.value+"="+res;
+    ecran.value="";
+    console.log(res);
 }
+function ALLclear(){
+    ecran.value="";
+}
+
