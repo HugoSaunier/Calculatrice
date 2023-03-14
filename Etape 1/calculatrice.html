@@ -8,46 +8,51 @@
 
 <body>
     <script type="text/javascript" src="calculatrice.js"></script>
-
+    <!--
+        Pour modéliser la calculette j'ai décidé de faire un tableau.
+        J'ai une case résultat dans laquelle s'affiche le résultat une fois que le "=" est pressé.
+        Et un case écran qui affiche les chiffre au fur et à mesure que l'on appui sur les touches.
+        Et également toute les cases classique d'une calculette avec un égal un clear et un ALLclear
+    -->
     <table class="calculatrice" >
         <tr>
             <td rawspan="2" colspan="5" id="resultat"><p id="res"></p>  </td>
         </tr>
         <tr>
             <td colspan="4"><input id="ecran" type="text"/></td>
-            <td> <input type="button" value="AC" onclick="ALLclear()"/> </td>
+            <td> <input class="bouton" id="AC" type="button" value="AC" onclick="ALLclear()"/> </td>
         </tr>
         <tr>
-            <td> <input type="button" value="7" onclick="Affiche('7')" /> </td>
-            <td> <input type="button" value="8" onclick="Affiche('8')" /> </td>
-            <td> <input type="button" value="9" onclick="Affiche('9')" /> </td>
-            <td> <input type="button" value="(" onclick="Affiche('(')" /> </td>
-            <td> <input type="button" value=")" onclick="Affiche(')')" /> </td>
+            <td> <input class="bouton" type="button" value="7" onclick="Affiche('7')" /> </td>
+            <td> <input class="bouton" type="button" value="8" onclick="Affiche('8')" /> </td>
+            <td> <input class="bouton" type="button" value="9" onclick="Affiche('9')" /> </td>
+            <td> <input class="bouton" type="button" value="(" onclick="Affiche('(')" /> </td>
+            <td> <input class="bouton" type="button" value=")" onclick="Affiche(')')" /> </td>
         </tr>
 
         <tr>
-            <td> <input type="button" value="4" onclick="Affiche('4')" /> </td>
-            <td> <input type="button" value="5" onclick="Affiche('5')" /> </td>
-            <td> <input type="button" value="6" onclick="Affiche('6')" /> </td>
-            <td> <input type="button" value="x" onclick="Affiche('*')" /> </td>
-            <td> <input type="button" value="/" onclick="Affiche('/')" /> </td>
+            <td> <input class="bouton" type="button" value="4" onclick="Affiche('4')" /> </td>
+            <td> <input class="bouton" type="button" value="5" onclick="Affiche('5')" /> </td>
+            <td> <input class="bouton" type="button" value="6" onclick="Affiche('6')" /> </td>
+            <td> <input class="bouton" type="button" value="x" onclick="Affiche('*')" /> </td>
+            <td> <input class="bouton" type="button" value="/" onclick="Affiche('/')" /> </td>
             
             
         </tr>
 
         <tr>
-            <td> <input type="button" value="1" onclick="Affiche('1')" /> </td>
-            <td> <input type="button" value="2" onclick="Affiche('2')" /> </td>
-            <td> <input type="button" value="3" onclick="Affiche('3')" /> </td>
-            <td> <input type="button" value="-" onclick="Affiche('-')" /> </td>
-            <td> <input type="button" value="+" onclick="Affiche('+')" /> </td>
+            <td> <input class="bouton" type="button" value="1" onclick="Affiche('1')" /> </td>
+            <td> <input class="bouton" type="button" value="2" onclick="Affiche('2')" /> </td>
+            <td> <input class="bouton" type="button" value="3" onclick="Affiche('3')" /> </td>
+            <td> <input class="bouton" type="button" value="-" onclick="Affiche('-')" /> </td>
+            <td> <input class="bouton" type="button" value="+" onclick="Affiche('+')" /> </td>
         </tr>
 
 
         <tr>
-            <td> <input type="button" value="." onclick="Affiche('.')" /> </td>
-            <td> <input type="button" value="0" onclick="Affiche('0')" /> </td>
-            <td> <input type="button" value="C" onclick="Boutonclear()"/> </td>
+            <td> <input class="bouton"type="button" value="." onclick="Affiche('.')" /> </td>
+            <td> <input class="bouton"type="button" value="0" onclick="Affiche('0')" /> </td>
+            <td> <input class="bouton"type="button" value="C" onclick="Boutonclear()"/> </td>
             <td colspan="2"> <input type="button" value="=" onclick="calcul()" id="egal" /> </td>
             
             

@@ -1,25 +1,42 @@
 .calculatrice{
     margin:auto;
     text-align: center;
-    background-color: rgb(139, 111, 216);
+    background-color: rgb(114, 213, 124);
+	border-radius: 12px;
+    height: 300px;
 }
 
 #ecran{ 
     margin:auto;
+    border-radius: 5px;
+    width: 90%;
+    height: 90%;
 }
 P { 
     text-align: center 
 }
 
 #resultat{
-    background-color: rgb(185, 181, 181);
+    background-color: rgb(210, 236, 207);
+    margin:auto;
+    border-radius: 14px;
 }
 
 #egal{
     background-color: rgb(22, 190, 16);
     width: 100%;
+    border-radius: 5px;
+    width: 90%;
+    height: 90%;
 }
-button {
-    font-size: 30px; /* définit la taille de police à 20 pixels pour toutes les cellules de la table */
+.bouton {
+    border-radius: 5px;
+    width: 90%;
+    height: 90%;
+    background-color: rgb(25, 84, 34);
+    color: aliceblue;
+  }
+  #AC{
+    background-color: rgb(211, 81, 16);
   }
 
