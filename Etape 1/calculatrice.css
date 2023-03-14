@@ -1,0 +1,15 @@
+.calculatrice{
+    margin:auto;
+    text-align: center;
+    background-color: rgb(139, 111, 216);
+}
+
+#ecran{ 
+    margin:auto;
+}
+P { 
+    text-align: center 
+}
+#resultat{
+    background-color: rgb(185, 181, 181);
+}
