@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <script type="text/javascript" src="calculatrice.js"></script>
+    
     <!--
         Pour modéliser la calculette j'ai décidé de faire un tableau.
         J'ai une case résultat dans laquelle s'affiche le résultat une fois que le "=" est pressé.
@@ -20,45 +20,45 @@
         </tr>
         <tr>
             <td colspan="4"><input id="ecran" type="text"/></td>
-            <td> <input class="bouton" id="AC" type="button" value="AC" onclick="ALLclear()"/> </td>
+            <td> <input class="bouton" id="AC" type="button" value="AC" onclick="baseCalculator.ALLclear()"/> </td>
         </tr>
         <tr>
-            <td> <input class="bouton" type="button" value="7" onclick="Affiche('7')" /> </td>
-            <td> <input class="bouton" type="button" value="8" onclick="Affiche('8')" /> </td>
-            <td> <input class="bouton" type="button" value="9" onclick="Affiche('9')" /> </td>
-            <td> <input class="bouton" type="button" value="(" onclick="Affiche('(')" /> </td>
-            <td> <input class="bouton" type="button" value=")" onclick="Affiche(')')" /> </td>
+            <td> <input class="bouton" type="button" value="7" onclick="baseCalculator.ecrit('7')" /> </td>
+            <td> <input class="bouton" type="button" value="8" onclick="baseCalculator.ecrit('8')" /> </td>
+            <td> <input class="bouton" type="button" value="9" onclick="baseCalculator.ecrit('9')" /> </td>
+            <td> <input class="bouton" type="button" value="(" onclick="baseCalculator.ecrit('(')" /> </td>
+            <td> <input class="bouton" type="button" value=")" onclick="baseCalculator.ecrit(')')" /> </td>
         </tr>
 
         <tr>
-            <td> <input class="bouton" type="button" value="4" onclick="Affiche('4')" /> </td>
-            <td> <input class="bouton" type="button" value="5" onclick="Affiche('5')" /> </td>
-            <td> <input class="bouton" type="button" value="6" onclick="Affiche('6')" /> </td>
-            <td> <input class="bouton" type="button" value="x" onclick="Affiche('*')" /> </td>
-            <td> <input class="bouton" type="button" value="/" onclick="Affiche('/')" /> </td>
+            <td> <input class="bouton" type="button" value="4" onclick="baseCalculator.ecrit('4')" /> </td>
+            <td> <input class="bouton" type="button" value="5" onclick="baseCalculator.ecrit('5')" /> </td>
+            <td> <input class="bouton" type="button" value="6" onclick="baseCalculator.ecrit('6')" /> </td>
+            <td> <input class="bouton" type="button" value="x" onclick="baseCalculator.ecrit('*')" /> </td>
+            <td> <input class="bouton" type="button" value="/" onclick="baseCalculator.ecrit('/')" /> </td>
             
             
         </tr>
 
         <tr>
-            <td> <input class="bouton" type="button" value="1" onclick="Affiche('1')" /> </td>
-            <td> <input class="bouton" type="button" value="2" onclick="Affiche('2')" /> </td>
-            <td> <input class="bouton" type="button" value="3" onclick="Affiche('3')" /> </td>
-            <td> <input class="bouton" type="button" value="-" onclick="Affiche('-')" /> </td>
-            <td> <input class="bouton" type="button" value="+" onclick="Affiche('+')" /> </td>
+            <td> <input class="bouton" type="button" value="1" onclick="baseCalculator.ecrit('1')" /> </td>
+            <td> <input class="bouton" type="button" value="2" onclick="baseCalculator.ecrit('2')" /> </td>
+            <td> <input class="bouton" type="button" value="3" onclick="baseCalculator.ecrit('3')" /> </td>
+            <td> <input class="bouton" type="button" value="-" onclick="baseCalculator.ecrit('-')" /> </td>
+            <td> <input class="bouton" type="button" value="+" onclick="baseCalculator.ecrit('+')" /> </td>
         </tr>
 
 
         <tr>
-            <td> <input class="bouton"type="button" value="." onclick="Affiche('.')" /> </td>
-            <td> <input class="bouton"type="button" value="0" onclick="Affiche('0')" /> </td>
-            <td> <input class="bouton"type="button" value="C" onclick="Boutonclear()"/> </td>
-            <td colspan="2"> <input type="button" value="=" onclick="calcul()" id="egal" /> </td>
+            <td> <input class="bouton"type="button" value="." onclick="baseCalculator.ecrit('.')" /> </td>
+            <td> <input class="bouton"type="button" value="0" onclick="baseCalculator.ecrit('0')" /> </td>
+            <td> <input class="bouton"type="button" value="←" onclick="baseCalculator.retour()"/> </td>
+            <td colspan="2"> <input type="button" value="=" onclick="baseCalculator.calcul()" id="egal" /> </td>
             
             
         </tr>
     </table>
 
 </body>
-
+<script type="text/javascript" src="calculatrice.js"></script>
 </html>
